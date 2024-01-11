@@ -59,7 +59,6 @@ sensor.gain = sensor_gain
 sensor.integration_time = sensor_integration_time
 
 def connect_to_wifi():
-
     print()
     print("Connecting to WiFi...", end="")
 
@@ -176,6 +175,9 @@ def read_samples(train_color):
             microcontroller.reset()
             continue
 
+
+# Initialize WiFI
+connect_to_wifi()
 
 # print("Setting up MQTT client for use with Adafruit IO")
 mqtt_client = MQTT.MQTT(
