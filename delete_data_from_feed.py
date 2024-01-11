@@ -4,7 +4,12 @@ import requests
 import sys
 
 
+print()
 print("*** WARNING: This script will delete all data collected to date.")
+print()
+print("NOTE: If you have more than about 30 data points, it is more effective ")
+print("to delete the feed in the AdafruitIO dashboard and start over")
+print()
 
 # Get wifi details and more from a secrets.py file
 try:
@@ -42,10 +47,8 @@ def yes_no_prompt():
         user_input = str(raw_input).lower().rstrip()
 
         if user_input == 'yes':
-            print("You chose to proceed.")
             return True
-        else user_input == 'no':
-            print("You chose not to proceed.")
+        elif user_input == 'no':
             return False
 
 proceed = yes_no_prompt()
