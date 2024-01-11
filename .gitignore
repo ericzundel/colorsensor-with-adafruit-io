@@ -164,3 +164,4 @@ boot_out.txt
 .metadata_never_index
 System Volume Information
 $RECYCLE.BIN
+secrets.py
