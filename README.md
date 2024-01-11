@@ -36,3 +36,18 @@ The data is recorded in an Adafruit IO stream as a python dictionary. For exampl
 
 The idea is to then download the data and use it as input to train a Machine Learning model.
 When I was developing this code I uploaded my data to: https://io.adafruit.com/ericzundel/feeds/colorsensor-training-data
+
+## secrets.py
+
+In the file `secrets.py` you should save the following data. It's not checked into git for security reasons.
+
+```
+secrets = {
+    'wifi_ssid': '',
+    'wifi_password': '',
+    # Add any other secret information here
+    'aio_username' : '',
+    'aio_key' : '',
+    'aio-colorsensor-feed-id' : 'colorsensor-training-data',
+}
+```
