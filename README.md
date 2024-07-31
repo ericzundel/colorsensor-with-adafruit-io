@@ -49,3 +49,8 @@ secrets = {
     'aio-colorsensor-feed-id' : 'colorsensor-training-data', # The name of your feed in Adafruit IO
 }
 ```
+
+## lib/ directory
+
+The files in the lib/ directory are for the convenience of students. The current version of the compiled files is for Circuit Python 9
+
